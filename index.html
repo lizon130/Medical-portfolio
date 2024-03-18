@@ -1,0 +1,3380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Portfolio-X - Index</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar">
+      <style>
+        #topbar {
+          background: #630ebd;
+          color: #fff;
+          height: 40px;
+          font-size: 16px;
+          font-weight: 600;
+          z-index: 996;
+          transition: all 0.5s;
+        }
+
+        #topbar.topbar-scrolled {
+          top: -40px;
+        }
+
+        #topbar i {
+          padding-right: 6px;
+          line-height: 0;
+        }
+      </style>
+
+      <div class="d-flex align-items-center fixed-top">
+        <div
+          class="container d-flex align-items-center justify-content-center justify-content-md-between"
+        >
+          <div class="align-items-center d-none d-md-flex">
+            <i class="bi bi-clock"></i> Monday - Saturday, 8AM to 10PM
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="bi bi-phone"></i> Call us now +1 5589 55488 55
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <style>
+        #header {
+          background: #fff;
+          transition: all 0.5s;
+          z-index: 997;
+          padding: 20px 0;
+          top: 40px;
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 992px) {
+          #header {
+            padding: 15px 0;
+          }
+        }
+
+        #header.header-scrolled {
+          top: 0;
+        }
+
+        #header .logo {
+          font-size: 28px;
+          margin: 0;
+          padding: 0;
+          line-height: 1;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+        }
+
+        #header .logo a {
+          color: #555555;
+        }
+
+        #header .logo img {
+          max-height: 40px;
+        }
+
+        .navbar {
+          padding: 0;
+        }
+
+        .navbar ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          list-style: none;
+          align-items: center;
+        }
+
+        .navbar li {
+          position: relative;
+        }
+
+        .navbar a,
+        .navbar a:focus {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 0 10px 30px;
+          font-family: "Roboto", sans-serif;
+          font-size: 13px;
+          color: #626262;
+          white-space: nowrap;
+          transition: 0.3s;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+
+        .navbar a i,
+        .navbar a:focus i {
+          font-size: 12px;
+          line-height: 0;
+          margin-left: 5px;
+        }
+
+        .navbar a:hover,
+        .navbar .active,
+        .navbar .active:focus,
+        .navbar li:hover > a {
+          color: #630ebd;
+        }
+
+        .navbar .dropdown ul {
+          display: block;
+          position: absolute;
+          left: 14px;
+          top: calc(100% + 30px);
+          margin: 0;
+          padding: 10px 0;
+          z-index: 99;
+          opacity: 0;
+          visibility: hidden;
+          background: #fff;
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          transition: 0.3s;
+          border-radius: 4px;
+        }
+
+        .navbar .dropdown ul li {
+          min-width: 200px;
+        }
+
+        .navbar .dropdown ul a {
+          padding: 10px 20px;
+          text-transform: none;
+        }
+
+        .navbar .dropdown ul a i {
+          font-size: 12px;
+        }
+
+        .navbar .dropdown ul a:hover,
+        .navbar .dropdown ul .active:hover,
+        .navbar .dropdown ul li:hover > a {
+          color: #630ebd;
+        }
+
+        .navbar .dropdown:hover > ul {
+          opacity: 1;
+          top: 100%;
+          visibility: visible;
+        }
+
+        .navbar .dropdown .dropdown ul {
+          top: 0;
+          left: calc(100% - 30px);
+          visibility: hidden;
+        }
+
+        .navbar .dropdown .dropdown:hover > ul {
+          opacity: 1;
+          top: 0;
+          left: 100%;
+          visibility: visible;
+        }
+
+        @media (max-width: 1366px) {
+          .navbar .dropdown .dropdown ul {
+            left: -90%;
+          }
+
+          .navbar .dropdown .dropdown:hover > ul {
+            left: -100%;
+          }
+        }
+
+        /**
+* Mobile Navigation 
+*/
+        .mobile-nav-toggle {
+          color: #555555;
+          font-size: 28px;
+          cursor: pointer;
+          display: none;
+          line-height: 0;
+          transition: 0.5s;
+        }
+
+        .mobile-nav-toggle.bi-x {
+          color: #fff;
+        }
+
+        @media (max-width: 991px) {
+          .mobile-nav-toggle {
+            display: block;
+          }
+
+          .navbar ul {
+            display: none;
+          }
+        }
+
+        .navbar-mobile {
+          position: fixed;
+          overflow: hidden;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: rgba(60, 60, 60, 0.9);
+          transition: 0.3s;
+          z-index: 999;
+        }
+
+        .navbar-mobile .mobile-nav-toggle {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+        }
+
+        .navbar-mobile ul {
+          display: block;
+          position: absolute;
+          top: 55px;
+          right: 15px;
+          bottom: 15px;
+          left: 15px;
+          padding: 10px 0;
+          border-radius: 8px;
+          background-color: #fff;
+          overflow-y: auto;
+          transition: 0.3s;
+        }
+
+        .navbar-mobile a,
+        .navbar-mobile a:focus {
+          padding: 10px 20px;
+          font-size: 15px;
+          color: #555555;
+        }
+
+        .navbar-mobile a:hover,
+        .navbar-mobile .active,
+        .navbar-mobile li:hover > a {
+          color: #630ebd;
+        }
+
+        .navbar-mobile .dropdown ul {
+          position: static;
+          display: none;
+          margin: 10px 20px;
+          padding: 10px 0;
+          z-index: 99;
+          opacity: 1;
+          visibility: visible;
+          background: #fff;
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        }
+
+        .navbar-mobile .dropdown ul li {
+          min-width: 200px;
+        }
+
+        .navbar-mobile .dropdown ul a {
+          padding: 10px 20px;
+        }
+
+        .navbar-mobile .dropdown ul a i {
+          font-size: 12px;
+        }
+
+        .navbar-mobile .dropdown ul a:hover,
+        .navbar-mobile .dropdown ul .active:hover,
+        .navbar-mobile .dropdown ul li:hover > a {
+          color: #630ebd;
+        }
+
+        .navbar-mobile .dropdown > .dropdown-active {
+          display: block;
+        }
+      </style>
+
+      <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto"><a href="index.html">Portfolio-X</a></h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#departments">Departments</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Deep Drop Down</span>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        <a href="#appointment" class="appointment-btn scrollto"
+          ><span class="d-none d-md-inline">Make an</span> Appointment</a
+        >
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <style>
+        #hero {
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(60, 60, 60, 0.8);
+          overflow: hidden;
+          position: relative;
+        }
+
+        #hero .carousel,
+        #hero .carousel-inner,
+        #hero .carousel-item,
+        #hero .carousel-item::before {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+        }
+
+        #hero .carousel-item {
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+        }
+
+        #hero .container {
+          text-align: left;
+          padding-top: 30px;
+          padding-bottom: 200px;
+          margin-bottom: 50px;
+        }
+
+        @media (max-width: 1200px) {
+          #hero .container {
+            margin-left: 50px;
+            margin-right: 50px;
+          }
+        }
+
+        #hero h2 {
+          color: #fff;
+          margin-bottom: 20px;
+          font-size: 36px;
+          font-weight: 700;
+        }
+
+        #hero p {
+          margin: 0 auto 30px auto;
+          color: #fff;
+          text-align: justify;
+        }
+
+        #hero .carousel-inner .carousel-item {
+          transition-property: opacity;
+          background-position: center top;
+        }
+
+        #hero .carousel-inner .carousel-item,
+        #hero .carousel-inner .active.carousel-item-start,
+        #hero .carousel-inner .active.carousel-item-end {
+          opacity: 0;
+        }
+
+        #hero .carousel-inner .active,
+        #hero .carousel-inner .carousel-item-next.carousel-item-start,
+        #hero .carousel-inner .carousel-item-prev.carousel-item-end {
+          opacity: 1;
+          transition: 0.5s;
+        }
+
+        #hero .carousel-inner .carousel-item-next,
+        #hero .carousel-inner .carousel-item-prev,
+        #hero .carousel-inner .active.carousel-item-start,
+        #hero .carousel-inner .active.carousel-item-end {
+          left: 0;
+          transform: translate3d(0, 0, 0);
+        }
+
+        #hero .carousel-control-next-icon,
+        #hero .carousel-control-prev-icon {
+          background: none;
+          font-size: 30px;
+          line-height: 0;
+          width: auto;
+          height: auto;
+          background: #7024c2;
+          border-radius: 50px;
+          transition: 0.3s;
+          color: rgba(255, 255, 255, 0.5);
+          width: 54px;
+          height: 54px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #hero .carousel-control-next-icon:hover,
+        #hero .carousel-control-prev-icon:hover {
+          background: #630ebd;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        #hero .carousel-indicators li {
+          list-style-type: none;
+          cursor: pointer;
+          background: #fff;
+          overflow: hidden;
+          border: 0;
+          width: 12px;
+          height: 12px;
+          border-radius: 50px;
+          opacity: 0.6;
+          transition: 0.3s;
+        }
+
+        #hero .carousel-indicators li.active {
+          opacity: 1;
+          background: #630ebd;
+        }
+
+        #hero .btn-get-started {
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          letter-spacing: 1px;
+          display: inline-block;
+          padding: 14px 32px;
+          border-radius: 4px;
+          transition: 0.5s;
+          line-height: 1;
+          color: #fff;
+          background: #630ebd;
+        }
+
+        #hero .btn-get-started:hover {
+          background: #d76dec;
+        }
+
+        @media (max-width: 992px) {
+          #hero {
+            height: 100vh;
+          }
+
+          #hero .container {
+            margin-top: 100px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          #hero h2 {
+            font-size: 28px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          #hero .carousel-control-prev,
+          #hero .carousel-control-next {
+            width: 5%;
+          }
+        }
+
+        @media (max-height: 500px) {
+          #hero {
+            height: 160vh;
+          }
+        }
+      </style>
+      <div
+        id="heroCarousel"
+        data-bs-interval="5000"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide 1 -->
+          <div
+            class="carousel-item active"
+            style="background-image: url(assets/img/slide/slide-1.jpg)"
+          >
+            <div class="container">
+              <div class="col-6">
+                <h2>Welcome to <span>Portfolio-X</span></h2>
+                <p>
+                  Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+                  et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                  mollitia ut. Similique ea voluptatem. Esse doloremque
+                  accusamus repellendus deleniti vel.
+                </p>
+                <a href="#about" class="btn-get-started scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slide/slide-2.jpg)"
+          >
+            <div class="container">
+              <div class="col-6">
+                <h2>Lorem Ipsum Dolor</h2>
+                <p>
+                  Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+                  et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                  mollitia ut. Similique ea voluptatem. Esse doloremque
+                  accusamus repellendus deleniti vel.
+                </p>
+                <a href="#about" class="btn-get-started scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slide/slide-3.jpg)"
+          >
+            <div class="container">
+              <div class="col-6">
+                <h2>Sequi ea ut et est quaerat</h2>
+                <p>
+                  Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+                  et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                  mollitia ut. Similique ea voluptatem. Esse doloremque
+                  accusamus repellendus deleniti vel.
+                </p>
+                <a href="#about" class="btn-get-started scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="carousel-control-prev"
+          href="#heroCarousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bi bi-chevron-left"
+            aria-hidden="true"
+          ></span>
+        </a>
+
+        <a
+          class="carousel-control-next"
+          href="#heroCarousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bi bi-chevron-right"
+            aria-hidden="true"
+          ></span>
+        </a>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= Featured Services Section ======= -->
+      <section id="featured-services" class="featured-services">
+        <style>
+          .featured-services .icon-box {
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+            transition: all 0.3s ease-in-out;
+            border-radius: 8px;
+            z-index: 1;
+          }
+
+          .featured-services .icon-box::before {
+            content: "";
+            position: absolute;
+            background: #d9f1f2;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 100%;
+            transition: all 0.5s;
+            z-index: -1;
+          }
+
+          .featured-services .icon-box:hover::before {
+            background: #630ebd;
+            top: 0;
+            border-radius: 0px;
+          }
+
+          .featured-services .icon {
+            margin-bottom: 15px;
+          }
+
+          .featured-services .icon i {
+            font-size: 48px;
+            line-height: 1;
+            color: #630ebd;
+            transition: all 0.3s ease-in-out;
+          }
+
+          .featured-services .title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 18px;
+          }
+
+          .featured-services .title a {
+            color: #111;
+          }
+
+          .featured-services .description {
+            font-size: 15px;
+            line-height: 28px;
+            margin-bottom: 0;
+          }
+
+          .featured-services .icon-box:hover .title a,
+          .featured-services .icon-box:hover .description {
+            color: #fff;
+          }
+
+          .featured-services .icon-box:hover .icon i {
+            color: #fff;
+          }
+        </style>
+
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                <p class="description">
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="fas fa-pills"></i></div>
+                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                <p class="description">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><i class="fas fa-thermometer"></i></div>
+                <h4 class="title"><a href="">Magni Dolores</a></h4>
+                <p class="description">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon"><i class="fas fa-dna"></i></div>
+                <h4 class="title"><a href="">Nemo Enim</a></h4>
+                <p class="description">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Featured Services Section -->
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <style>
+          .cta {
+            background: #630ebd;
+            color: #fff;
+            background-size: cover;
+            padding: 60px 0;
+          }
+
+          .cta h3 {
+            font-size: 28px;
+            font-weight: 700;
+          }
+
+          .cta .cta-btn {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 10px 35px;
+            border-radius: 25px;
+            transition: 0.5s;
+            margin-top: 10px;
+            border: 2px solid #fff;
+            color: #fff;
+          }
+
+          .cta .cta-btn:hover {
+            background: #fff;
+            color: #630ebd;
+          }
+        </style>
+        <div class="container" data-aos="zoom-in">
+          <div class="text-center">
+            <h3>In an emergency? Need help now?</h3>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+            <a class="cta-btn scrollto" href="#appointment"
+              >Make an Appointment</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <style>
+          .about .content h3 {
+            font-weight: 600;
+            font-size: 26px;
+          }
+
+          .about .content ul {
+            list-style: none;
+            padding: 0;
+          }
+
+          .about .content ul li {
+            padding-bottom: 10px;
+          }
+
+          .about .content ul i {
+            font-size: 20px;
+            padding-right: 4px;
+            color: #630ebd;
+          }
+
+          .about .content p:last-child {
+            margin-bottom: 0;
+          }
+        </style>
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About Us</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <h3>
+                Voluptatem dignissimos provident quasi corporis voluptates sit
+                assumenda.
+              </h3>
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore.
+              </p>
+              <ul>
+                <li>
+                  <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i> Duis aute irure dolor in
+                  reprehenderit in voluptate velit.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit.
+                </li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Us Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <style>
+          .counts {
+            padding-bottom: 30px;
+          }
+
+          .counts .count-box {
+            box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+          }
+
+          .counts .count-box i {
+            display: block;
+            font-size: 30px;
+            color: #630ebd;
+            float: left;
+          }
+
+          .counts .count-box span {
+            font-size: 42px;
+            line-height: 24px;
+            display: block;
+            font-weight: 700;
+            color: #555555;
+            margin-left: 50px;
+          }
+
+          .counts .count-box p {
+            padding: 30px 0 0 0;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+          }
+
+          .counts .count-box a {
+            font-weight: 600;
+            display: block;
+            margin-top: 20px;
+            color: #7b7b7b;
+            font-size: 15px;
+            font-family: "Poppins", sans-serif;
+            transition: ease-in-out 0.3s;
+          }
+
+          .counts .count-box a:hover {
+            color: #630ebd;
+          }
+        </style>
+        <div class="container" data-aos="fade-up">
+          <div class="row no-gutters">
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="fas fa-user-md"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="85"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+
+                <p><strong>Doctors</strong> consequuntur quae qui deca rode</p>
+                <a href="#">Find out more &raquo;</a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="far fa-hospital"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="26"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Departments</strong> adipisci atque cum quia aut
+                  numquam delectus
+                </p>
+                <a href="#">Find out more &raquo;</a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="fas fa-flask"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="14"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Research Lab</strong> aut commodi quaerat. Aliquam
+                  ratione
+                </p>
+                <a href="#">Find out more &raquo;</a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="fas fa-award"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="150"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Awards</strong> rerum asperiores dolor molestiae
+                  doloribu
+                </p>
+                <a href="#">Find out more &raquo;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <style>
+          .features .icon-box h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 5px 0 10px 60px;
+          }
+
+          .features .icon-box i {
+            font-size: 48px;
+            float: left;
+            color: #630ebd;
+          }
+
+          .features .icon-box p {
+            font-size: 15px;
+            color: #848484;
+            margin-left: 60px;
+          }
+
+          .features .image {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 400px;
+          }
+
+          #features .btn-get-started {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 4px;
+            transition: 0.5s;
+            line-height: 1;
+            color: #fff;
+            background: #630ebd;
+          }
+
+          #features .btn-get-started:hover {
+            background: #d76dec;
+          }
+        </style>
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 p-3" data-aos="fade-right">
+              <div class="icon-box mt-5 mt-lg-0">
+                <i class="bx bx-receipt"></i>
+                <h4>Est labore ad</h4>
+                <p>
+                  Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                  laboris nisi ut aliquip
+                </p>
+              </div>
+              <div class="icon-box mt-5">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Harum esse qui</h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
+              </div>
+              <div class="icon-box mt-5">
+                <i class="bx bx-images"></i>
+                <h4>Aut occaecati</h4>
+                <p>
+                  Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                  maiores omnis facere
+                </p>
+              </div>
+              <div class="icon-box mt-5">
+                <i class="bx bx-shield"></i>
+                <h4>Beatae veritatis</h4>
+                <p>
+                  Expedita veritatis consequuntur nihil tempore laudantium vitae
+                  denat pacta
+                </p>
+              </div>
+            </div>
+            <div
+              class="image col-lg-6 order-1 order-lg-2"
+              style="background-image: url('assets/img/feature-1.jpg')"
+              data-aos="zoom-in"
+            ></div>
+          </div>
+
+          <div class="row">
+            <div
+              class="image col-lg-6 order-2 order-lg-1"
+              style="background-image: url('assets/img/feature-2.jpg')"
+              data-aos="zoom-in"
+            ></div>
+
+            <div
+              class="d-flex flex-row align-items-center col-lg-6 order-1 order-lg-2"
+              data-aos="fade-right"
+            >
+              <div class="d-flex flex-column p-3">
+                <h2>Lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                  in labore iusto? Distinctio, sint, dolor quaerat earum quis
+                  quisquam tenetur qui id hic voluptatem enim laboriosam
+                  corporis repudiandae quidem praesentium!
+                </p>
+                <div>
+                  <a href="#" class="btn-get-started scrollto">See More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Features Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services services">
+        <style>
+          .services .icon-box {
+            margin-bottom: 20px;
+            text-align: center;
+          }
+
+          .services .icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 50%;
+            transition: 0.5s;
+            color: #630ebd;
+            overflow: hidden;
+            box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+          }
+
+          .services .icon i {
+            font-size: 36px;
+            line-height: 0;
+          }
+
+          .services .icon-box:hover .icon {
+            box-shadow: 0px 0 25px rgba(63, 187, 192, 0.3);
+          }
+
+          .services .title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 18px;
+            position: relative;
+            padding-bottom: 15px;
+          }
+
+          .services .title a {
+            color: #444444;
+            transition: 0.3s;
+          }
+
+          .services .title a:hover {
+            color: #630ebd;
+          }
+
+          .services .title::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: #630ebd;
+            bottom: 0;
+            left: calc(50% - 25px);
+          }
+
+          .services .description {
+            line-height: 24px;
+            font-size: 14px;
+          }
+        </style>
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 icon-box"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon"><i class="fas fa-heartbeat"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">
+                Voluptatum deleniti atque corrupti quos dolores et quas
+                molestias excepturi sint occaecati cupiditate non provident
+              </p>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 icon-box"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon"><i class="fas fa-pills"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">
+                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat tarad limino ata
+              </p>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 icon-box"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur
+              </p>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 icon-box"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon"><i class="fas fa-dna"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 icon-box"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon"><i class="fas fa-wheelchair"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque
+              </p>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 icon-box"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon"><i class="fas fa-notes-medical"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">
+                Et harum quidem rerum facilis est et expedita distinctio. Nam
+                libero tempore, cum soluta nobis est eligendi
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <section id="career">
+        <style>
+          .resume-border {
+            border-left: 10px solid #630ebd;
+            border-radius: 15px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 5px 2px rgba(14, 13, 13, 0.1);
+          }
+          .process-wrapper {
+            margin: auto;
+            max-width: 1080px;
+          }
+
+          #progress-bar-container {
+            position: relative;
+            width: 90%;
+            margin: auto;
+            height: 100px;
+            margin-top: 65px;
+          }
+
+          #progress-bar-container ul {
+            padding: 0;
+            margin: 0;
+            padding-top: 15px;
+            z-index: 9999;
+            position: absolute;
+            width: 100%;
+            margin-top: -40px;
+          }
+
+          #progress-bar-container li:before {
+            content: " ";
+            display: block;
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: solid 2px #aaa;
+            transition: all ease 0.3s;
+          }
+
+          #progress-bar-container li.active:before,
+          #progress-bar-container li:hover:before {
+            border: solid 2px #fff;
+
+            background: linear-gradient(to right, #630ebd 0%, #fff 100%);
+          }
+
+          #progress-bar-container li {
+            list-style: none;
+            float: left;
+            width: 20%;
+            text-align: center;
+            color: #aaa;
+            text-transform: uppercase;
+            font-size: 11px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all ease 0.2s;
+            vertical-align: bottom;
+            height: 60px;
+            position: relative;
+          }
+
+          #progress-bar-container li .step-inner {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            font-size: 14px;
+          }
+
+          #progress-bar-container li.active,
+          #progress-bar-container li:hover {
+            color: #444;
+          }
+
+          #progress-bar-container li:after {
+            content: " ";
+            display: block;
+            width: 6px;
+            height: 6px;
+            background: #777;
+            margin: auto;
+            border: solid 7px #fff;
+            border-radius: 50%;
+            margin-top: 40px;
+            box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.3);
+            transition: all ease 0.2s;
+          }
+
+          #progress-bar-container li:hover:after {
+            background: #555;
+          }
+
+          #progress-bar-container li.active:after {
+            background: #630ebd;
+          }
+
+          #progress-bar-container #line {
+            width: 80%;
+            margin: auto;
+            background: #eee;
+            height: 6px;
+            position: absolute;
+            left: 10%;
+            top: 57px;
+            z-index: 1;
+            border-radius: 50px;
+            transition: all ease 0.9s;
+          }
+
+          #progress-bar-container #line-progress {
+            content: " ";
+            width: 3%;
+            height: 100%;
+            background: #630ebd !important;
+            background: linear-gradient(to right, #207893 0%, #2ea3b7 100%);
+            position: absolute;
+            z-index: 2;
+            border-radius: 50px;
+            transition: all ease 0.9s;
+          }
+
+          #progress-content-section {
+            width: 90%;
+            margin: auto;
+            background: #f3f3f3;
+            border-radius: 4px;
+          }
+
+          #progress-content-section .section-content {
+            padding: 30px 40px;
+            text-align: center;
+          }
+
+          #progress-content-section .section-content h2 {
+            font-size: 17px;
+            text-transform: uppercase;
+            color: #333;
+            letter-spacing: 1px;
+          }
+
+          #progress-content-section .section-content p {
+            font-size: 16px;
+            line-height: 1.8em;
+            color: #777;
+          }
+
+          #progress-content-section .section-content {
+            display: none;
+            animation: FadeInUp 700ms ease 1;
+            animation-fill-mode: forwards;
+            transform: translateY(15px);
+            opacity: 0;
+          }
+
+          #progress-content-section .section-content.active {
+            display: block;
+          }
+
+          @keyframes FadeInUp {
+            0% {
+              transform: translateY(15px);
+              opacity: 0;
+            }
+
+            100% {
+              transform: translateY(0px);
+              opacity: 1;
+            }
+          }
+        </style>
+
+        <div class="container">
+          <div class="section-title">
+            <h2>Resume</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div class="resume">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home"
+                  type="button"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                >
+                  Experience
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  Education
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <div class="container">
+                  <div class="row flex-row">
+                    <div class="col-6 p-5">
+                      <div class="resume-border p-3">
+                        <h3>
+                          <i class="fa-solid fa-building-columns pe-2"></i
+                          >Massachusetts General Hospital
+                        </h3>
+                        <p><b>2018-2022</b></p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Voluptas ipsum, beatae alias unde ipsam
+                          possimus.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-5">
+                      <div class="resume-border p-3">
+                        <h3>
+                          <i class="fa-solid fa-building-columns pe-2"></i
+                          >Massachusetts General Hospital
+                        </h3>
+                        <p><b>2018-2022</b></p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Voluptas ipsum, beatae alias unde ipsam
+                          possimus.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row flex-row">
+                    <div class="col-6 p-5">
+                      <div class="resume-border p-3">
+                        <h3>
+                          <i class="fa-solid fa-building-columns pe-2"></i
+                          >Massachusetts General Hospital
+                        </h3>
+                        <p><b>2018-2022</b></p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Voluptas ipsum, beatae alias unde ipsam
+                          possimus.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-6 p-5">
+                      <div class="resume-border p-3">
+                        <h3>
+                          <i class="fa-solid fa-building-columns pe-2"></i
+                          >Massachusetts General Hospital
+                        </h3>
+                        <p><b>2018-2022</b></p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Voluptas ipsum, beatae alias unde ipsam
+                          possimus.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <div class="container">
+                  <br />
+                  <div class="process-wrapper">
+                    <div id="progress-bar-container">
+                      <ul>
+                        <li class="step step01 active">
+                          <div class="step-inner">FCPS</div>
+                        </li>
+                        <li class="step step02">
+                          <div class="step-inner">MBBS</div>
+                        </li>
+                        <li class="step step03">
+                          <div class="step-inner">FRCS</div>
+                        </li>
+                        <li class="step step04">
+                          <div class="step-inner">PHD</div>
+                        </li>
+                        <li class="step step05">
+                          <div class="step-inner">FRCS</div>
+                        </li>
+                      </ul>
+
+                      <div id="line">
+                        <div id="line-progress"></div>
+                      </div>
+                    </div>
+
+                    <div id="progress-content-section">
+                      <div class="section-content discovery active">
+                        <h2>HOME SECTION</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Donec neque justo, consequat non fermentum ac,
+                          tempor eu turpis. Proin nulla eros, placerat non ipsum
+                          ut, dapibus ullamcorper ex. Nulla in dapibus lorem.
+                          Suspendisse vitae velit ac ante consequat placerat ut
+                          sed eros. Nullam porttitor mattis mi, id fringilla ex
+                          consequat eu. Praesent pulvinar tincidunt leo et
+                          condimentum. Maecenas volutpat turpis at felis egestas
+                          malesuada. Phasellus sem odio, venenatis at ex a,
+                          lacinia suscipit orci.
+                        </p>
+                      </div>
+
+                      <div class="section-content strategy">
+                        <h2>GALLERY SECTION</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Donec neque justo, consequat non fermentum ac,
+                          tempor eu turpis. Proin nulla eros, placerat non ipsum
+                          ut, dapibus ullamcorper ex. Nulla in dapibus lorem.
+                          Suspendisse vitae velit ac ante consequat placerat ut
+                          sed eros. Nullam porttitor mattis mi, id fringilla ex
+                          consequat eu. Praesent pulvinar tincidunt leo et
+                          condimentum. Maecenas volutpat turpis at felis egestas
+                          malesuada. Phasellus sem odio, venenatis at ex a,
+                          lacinia suscipit orci.
+                        </p>
+                      </div>
+
+                      <div class="section-content creative">
+                        <h2>Creative CREATIONS</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Donec neque justo, consequat non fermentum ac,
+                          tempor eu turpis. Proin nulla eros, placerat non ipsum
+                          ut, dapibus ullamcorper ex. Nulla in dapibus lorem.
+                          Suspendisse vitae velit ac ante consequat placerat ut
+                          sed eros. Nullam porttitor mattis mi, id fringilla ex
+                          consequat eu. Praesent pulvinar tincidunt leo et
+                          condimentum. Maecenas volutpat turpis at felis egestas
+                          malesuada. Phasellus sem odio, venenatis at ex a,
+                          lacinia suscipit orci.
+                        </p>
+                      </div>
+
+                      <div class="section-content production">
+                        <h2>TESTIMONIALS NOW</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Donec neque justo, consequat non fermentum ac,
+                          tempor eu turpis. Proin nulla eros, placerat non ipsum
+                          ut, dapibus ullamcorper ex. Nulla in dapibus lorem.
+                          Suspendisse vitae velit ac ante consequat placerat ut
+                          sed eros. Nullam porttitor mattis mi, id fringilla ex
+                          consequat eu. Praesent pulvinar tincidunt leo et
+                          condimentum. Maecenas volutpat turpis at felis egestas
+                          malesuada. Phasellus sem odio, venenatis at ex a,
+                          lacinia suscipit orci.
+                        </p>
+                      </div>
+
+                      <div class="section-content analysis">
+                        <h2>OUR LOCATIONS</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Donec neque justo, consequat non fermentum ac,
+                          tempor eu turpis. Proin nulla eros, placerat non ipsum
+                          ut, dapibus ullamcorper ex. Nulla in dapibus lorem.
+                          Suspendisse vitae velit ac ante consequat placerat ut
+                          sed eros. Nullam porttitor mattis mi, id fringilla ex
+                          consequat eu. Praesent pulvinar tincidunt leo et
+                          condimentum. Maecenas volutpat turpis at felis egestas
+                          malesuada. Phasellus sem odio, venenatis at ex a,
+                          lacinia suscipit orci.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script>
+          $(".step").click(function () {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+          });
+
+          $(".step01").click(function () {
+            $("#line-progress").css("width", "3%");
+            $(".discovery").addClass("active").siblings().removeClass("active");
+          });
+
+          $(".step02").click(function () {
+            $("#line-progress").css("width", "25%");
+            $(".strategy").addClass("active").siblings().removeClass("active");
+          });
+
+          $(".step03").click(function () {
+            $("#line-progress").css("width", "50%");
+            $(".creative").addClass("active").siblings().removeClass("active");
+          });
+
+          $(".step04").click(function () {
+            $("#line-progress").css("width", "75%");
+            $(".production")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          });
+
+          $(".step05").click(function () {
+            $("#line-progress").css("width", "100%");
+            $(".analysis").addClass("active").siblings().removeClass("active");
+          });
+        </script>
+      </section>
+
+      <!-- ======= Appointment Section ======= -->
+      <section id="appointment" class="appointment section-bg">
+        <style>
+          .appointment .php-email-form {
+            width: 100%;
+          }
+
+          .appointment .php-email-form .form-group {
+            padding-bottom: 8px;
+          }
+
+          .appointment .php-email-form .validate {
+            display: none;
+            color: red;
+            margin: 0 0 15px 0;
+            font-weight: 400;
+            font-size: 13px;
+          }
+
+          .appointment .php-email-form .error-message {
+            display: none;
+            color: #fff;
+            background: #ed3c0d;
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+          }
+
+          .appointment .php-email-form .error-message br + br {
+            margin-top: 25px;
+          }
+
+          .appointment .php-email-form .sent-message {
+            display: none;
+            color: #fff;
+            background: #18d26e;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+          }
+
+          .appointment .php-email-form .loading {
+            display: none;
+            background: #fff;
+            text-align: center;
+            padding: 15px;
+          }
+
+          .appointment .php-email-form .loading:before {
+            content: "";
+            display: inline-block;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            margin: 0 10px -6px 0;
+            border: 3px solid #18d26e;
+            border-top-color: #eee;
+            animation: animate-loading 1s linear infinite;
+          }
+
+          .appointment .php-email-form input,
+          .appointment .php-email-form textarea,
+          .appointment .php-email-form select {
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 14px;
+            padding: 10px !important;
+          }
+
+          .appointment .php-email-form input:focus,
+          .appointment .php-email-form textarea:focus,
+          .appointment .php-email-form select:focus {
+            border-color: #630ebd;
+          }
+
+          .appointment .php-email-form input,
+          .appointment .php-email-form select {
+            height: 44px;
+          }
+
+          .appointment .php-email-form textarea {
+            padding: 10px 12px;
+          }
+
+          .appointment .php-email-form button[type="submit"] {
+            background: #630ebd;
+            border: 0;
+            padding: 10px 35px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 50px;
+          }
+
+          .appointment .php-email-form button[type="submit"]:hover {
+            background: #d76dec;
+          }
+        </style>
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Make an Appointment</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <form
+            action="forms/appointment.php"
+            method="post"
+            role="form"
+            class="php-email-form"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="row">
+              <div class="col-md-4 form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="phone"
+                  id="phone"
+                  placeholder="Your Phone"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 form-group mt-3">
+                <input
+                  type="datetime"
+                  name="date"
+                  class="form-control datepicker"
+                  id="date"
+                  placeholder="Appointment Date"
+                  required
+                />
+              </div>
+              <div class="col-md-4 form-group mt-3">
+                <select name="department" id="department" class="form-select">
+                  <option value="">Select Department</option>
+                  <option value="Department 1">Department 1</option>
+                  <option value="Department 2">Department 2</option>
+                  <option value="Department 3">Department 3</option>
+                </select>
+              </div>
+              <div class="col-md-4 form-group mt-3">
+                <select name="doctor" id="doctor" class="form-select">
+                  <option value="">Select Doctor</option>
+                  <option value="Doctor 1">Doctor 1</option>
+                  <option value="Doctor 2">Doctor 2</option>
+                  <option value="Doctor 3">Doctor 3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group mt-3">
+              <textarea
+                class="form-control"
+                name="message"
+                rows="5"
+                placeholder="Message (Optional)"
+              ></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Your appointment request has been sent successfully. Thank you!
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit">Make an Appointment</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- End Appointment Section -->
+
+      <!-- ======= Departments Section ======= -->
+      <section id="departments" class="departments">
+        <style>
+          .departments .nav-tabs {
+            border: 0;
+          }
+
+          .departments .nav-link {
+            border: 0;
+            padding: 20px;
+            color: #555555;
+            border-radius: 0;
+            border-left: 5px solid #fff;
+            cursor: pointer;
+          }
+
+          .departments .nav-link h4 {
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+          }
+
+          .departments .nav-link p {
+            font-size: 14px;
+            margin-bottom: 0;
+          }
+
+          .departments .nav-link:hover h4 {
+            color: #630ebd;
+          }
+
+          .departments .nav-link.active {
+            background: #f7fcfc;
+            border-color: #630ebd;
+          }
+
+          .departments .nav-link.active h4 {
+            color: #630ebd;
+          }
+
+          .departments .tab-pane.active {
+            animation: slide-down 0.5s ease-out;
+          }
+
+          .departments .tab-pane img {
+            float: left;
+            max-width: 300px;
+            padding: 0 15px 15px 0;
+          }
+
+          @media (max-width: 768px) {
+            .departments .tab-pane img {
+              float: none;
+              padding: 0 0 15px 0;
+              max-width: 100%;
+            }
+          }
+
+          .departments .tab-pane h3 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #630ebd;
+          }
+
+          .departments .tab-pane p {
+            color: #777777;
+          }
+
+          .departments .tab-pane p:last-child {
+            margin-bottom: 0;
+          }
+
+          @keyframes slide-down {
+            0% {
+              opacity: 0;
+            }
+
+            100% {
+              opacity: 1;
+            }
+          }
+        </style>
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Departments</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active show"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-1"
+                  >
+                    <h4>Cardiology</h4>
+                    <p>
+                      Quis excepturi porro totam sint earum quo nulla
+                      perspiciatis eius.
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item mt-2">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-2"
+                  >
+                    <h4>Neurology</h4>
+                    <p>Voluptas vel esse repudiandae quo excepturi.</p>
+                  </a>
+                </li>
+                <li class="nav-item mt-2">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-3"
+                  >
+                    <h4>Hepatology</h4>
+                    <p>
+                      Velit veniam ipsa sit nihil blanditiis mollitia natus.
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item mt-2">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-4"
+                  >
+                    <h4>Pediatrics</h4>
+                    <p>
+                      Ratione hic sapiente nostrum doloremque illum nulla
+                      praesentium id
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <h3>Cardiology</h3>
+                  <p class="fst-italic">
+                    Qui laudantium consequatur laborum sit qui ad sapiente dila
+                    parde sonata raqer a videna mareta paulona marka
+                  </p>
+                  <img
+                    src="assets/img/departments-1.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <p>
+                    Et nobis maiores eius. Voluptatibus ut enim blanditiis atque
+                    harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic
+                    ut molestiae aut qui. Est repellat minima eveniet eius et
+                    quis magni nihil. Consequatur dolorem quaerat quos qui
+                    similique accusamus nostrum rem vero
+                  </p>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                  <h3>Neurology</h3>
+                  <p class="fst-italic">
+                    Qui laudantium consequatur laborum sit qui ad sapiente dila
+                    parde sonata raqer a videna mareta paulona marka
+                  </p>
+                  <img
+                    src="assets/img/departments-2.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <p>
+                    Et nobis maiores eius. Voluptatibus ut enim blanditiis atque
+                    harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic
+                    ut molestiae aut qui. Est repellat minima eveniet eius et
+                    quis magni nihil. Consequatur dolorem quaerat quos qui
+                    similique accusamus nostrum rem vero
+                  </p>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                  <h3>Hepatology</h3>
+                  <p class="fst-italic">
+                    Qui laudantium consequatur laborum sit qui ad sapiente dila
+                    parde sonata raqer a videna mareta paulona marka
+                  </p>
+                  <img
+                    src="assets/img/departments-3.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <p>
+                    Et nobis maiores eius. Voluptatibus ut enim blanditiis atque
+                    harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic
+                    ut molestiae aut qui. Est repellat minima eveniet eius et
+                    quis magni nihil. Consequatur dolorem quaerat quos qui
+                    similique accusamus nostrum rem vero
+                  </p>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                  <h3>Pediatrics</h3>
+                  <p class="fst-italic">
+                    Qui laudantium consequatur laborum sit qui ad sapiente dila
+                    parde sonata raqer a videna mareta paulona marka
+                  </p>
+                  <img
+                    src="assets/img/departments-4.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <p>
+                    Et nobis maiores eius. Voluptatibus ut enim blanditiis atque
+                    harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic
+                    ut molestiae aut qui. Est repellat minima eveniet eius et
+                    quis magni nihil. Consequatur dolorem quaerat quos qui
+                    similique accusamus nostrum rem vero
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Departments Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <style>
+          .testimonials .testimonials-carousel,
+          .testimonials .testimonials-slider {
+            overflow: hidden;
+          }
+
+          .testimonials .testimonial-item {
+            box-sizing: content-box;
+            min-height: 320px;
+          }
+
+          .testimonials .testimonial-item .testimonial-img {
+            width: 90px;
+            border-radius: 50%;
+            margin: -40px 0 0 40px;
+            position: relative;
+            z-index: 2;
+            border: 6px solid #fff;
+          }
+
+          .testimonials .testimonial-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0 5px 45px;
+            color: #111;
+          }
+
+          .testimonials .testimonial-item h4 {
+            font-size: 14px;
+            color: #999;
+            margin: 0 0 0 45px;
+          }
+
+          .testimonials .testimonial-item .quote-icon-left,
+          .testimonials .testimonial-item .quote-icon-right {
+            color: #630ebd;
+            font-size: 26px;
+          }
+
+          .testimonials .testimonial-item .quote-icon-left {
+            display: inline-block;
+            left: -5px;
+            position: relative;
+          }
+
+          .testimonials .testimonial-item .quote-icon-right {
+            display: inline-block;
+            right: -5px;
+            position: relative;
+            top: 10px;
+          }
+
+          .testimonials .testimonial-item p {
+            font-style: italic;
+            margin: 0 15px 0 15px;
+            padding: 20px 20px 60px 20px;
+            background: #f8d5ff;
+            position: relative;
+            border-radius: 6px;
+            position: relative;
+            z-index: 1;
+          }
+
+          .testimonials .swiper-pagination {
+            margin-top: 20px;
+            position: relative;
+          }
+
+          .testimonials .swiper-pagination .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            opacity: 1;
+            border: 1px solid #630ebd;
+          }
+
+          .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+            background-color: #630ebd;
+          }
+        </style>
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Testimonials</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div
+            class="testimonials-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec
+                    porttitora entum suscipit rhoncus. Accusantium quam,
+                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                    risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-1.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse
+                    labore quem cillum quid cillum eram malis quorum velit fore
+                    eram velit sunt aliqua noster fugiat irure amet legam anim
+                    culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-2.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-3.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                    multos export minim fugiat minim velit minim dolor enim duis
+                    veniam ipsum anim magna sunt elit fore quem dolore labore
+                    illum veniam.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-4.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure
+                    aliqua veniam tempor noster veniam enim culpa labore duis
+                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                    fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-5.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- ======= Doctors Section ======= -->
+      <section id="doctors" class="doctors section-bg">
+        <style>
+          .doctors .member {
+            margin-bottom: 20px;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 4px;
+            background: #fff;
+            box-shadow: 0px 2px 15px rgba(63, 187, 192, 0.1);
+          }
+
+          .doctors .member .member-img {
+            position: relative;
+            overflow: hidden;
+          }
+
+          .doctors .member .social {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 40px;
+            opacity: 0;
+            transition: ease-in-out 0.3s;
+            background: rgba(255, 255, 255, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .doctors .member .social a {
+            transition: color 0.3s;
+            color: #555555;
+            margin: 0 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .doctors .member .social a i {
+            line-height: 0;
+          }
+
+          .doctors .member .social a:hover {
+            color: #630ebd;
+          }
+
+          .doctors .member .social i {
+            font-size: 18px;
+            margin: 0 2px;
+          }
+
+          .doctors .member .member-info {
+            padding: 25px 15px;
+          }
+
+          .doctors .member .member-info h4 {
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: #555555;
+          }
+
+          .doctors .member .member-info span {
+            display: block;
+            font-size: 13px;
+            font-weight: 400;
+            color: #aaaaaa;
+          }
+
+          .doctors .member .member-info p {
+            font-style: italic;
+            font-size: 14px;
+            line-height: 26px;
+            color: #777777;
+          }
+
+          .doctors .member:hover .social {
+            opacity: 1;
+          }
+        </style>
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Doctors</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="100">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-1.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Walter White</h4>
+                        <span>Chief Medical Officer</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="200">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-2.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Sarah Jhonson</h4>
+                        <span>Anesthesiologist</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="300">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-3.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>William Anderson</h4>
+                        <span>Cardiology</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="400">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-4.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Amanda Jepson</h4>
+                        <span>Neurosurgeon</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="100">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-1.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Walter White</h4>
+                        <span>Chief Medical Officer</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="200">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-2.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Sarah Jhonson</h4>
+                        <span>Anesthesiologist</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="300">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-3.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>William Anderson</h4>
+                        <span>Cardiology</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="400">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-4.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Amanda Jepson</h4>
+                        <span>Neurosurgeon</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="100">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-1.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Walter White</h4>
+                        <span>Chief Medical Officer</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="200">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-2.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Sarah Jhonson</h4>
+                        <span>Anesthesiologist</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="300">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-3.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>William Anderson</h4>
+                        <span>Cardiology</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="400">
+                      <div class="member-img">
+                        <img
+                          src="assets/img/doctors/doctors-4.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Amanda Jepson</h4>
+                        <span>Neurosurgeon</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              style="margin-left: -105px"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <i
+                class="fas fa-circle-arrow-left fa-2x"
+                style="color: #630ebd"
+              ></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              style="margin-right: -105px"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <i
+                class="fas fa-circle-arrow-right fa-2x"
+                style="color: #630ebd"
+              ></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- End Doctors Section -->
+      
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <style>
+          .contact .info-box {
+            color: #444444;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+            padding: 20px 0 30px 0;
+          }
+
+          .contact .info-box i {
+            font-size: 32px;
+            color: #630ebd;
+            border-radius: 50%;
+            padding: 8px;
+            border: 2px dotted #c5ebec;
+          }
+
+          .contact .info-box h3 {
+            font-size: 20px;
+            color: #777777;
+            font-weight: 700;
+            margin: 10px 0;
+          }
+
+          .contact .info-box p {
+            padding: 0;
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 0;
+          }
+
+          .contact .php-email-form {
+            box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+            padding: 30px;
+          }
+
+          .contact .php-email-form .error-message {
+            display: none;
+            color: #fff;
+            background: #ed3c0d;
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+          }
+
+          .contact .php-email-form .error-message br + br {
+            margin-top: 25px;
+          }
+
+          .contact .php-email-form .sent-message {
+            display: none;
+            color: #fff;
+            background: #18d26e;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+          }
+
+          .contact .php-email-form .loading {
+            display: none;
+            background: #fff;
+            text-align: center;
+            padding: 15px;
+          }
+
+          .contact .php-email-form .loading:before {
+            content: "";
+            display: inline-block;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            margin: 0 10px -6px 0;
+            border: 3px solid #18d26e;
+            border-top-color: #eee;
+            animation: animate-loading 1s linear infinite;
+          }
+
+          .contact .php-email-form input,
+          .contact .php-email-form textarea {
+            border-radius: 4px;
+            box-shadow: none;
+            font-size: 14px;
+          }
+
+          .contact .php-email-form input:focus,
+          .contact .php-email-form textarea:focus {
+            border-color: #630ebd;
+          }
+
+          .contact .php-email-form input {
+            padding: 10px 15px;
+          }
+
+          .contact .php-email-form textarea {
+            padding: 12px 15px;
+          }
+
+          .contact .php-email-form button[type="submit"] {
+            background: #630ebd;
+            border: 0;
+            padding: 10px 30px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 4px;
+          }
+
+          .contact .php-email-form button[type="submit"]:hover {
+            background: #d76dec;
+          }
+
+          @keyframes animate-loading {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        </style>
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <iframe
+            style="border: 0; width: 100%; height: 350px"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="info-box">
+                    <i class="bx bx-map"></i>
+                    <h3>Our Address</h3>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box mt-4">
+                    <i class="bx bx-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>info@example.com<br />contact@example.com</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box mt-4">
+                    <i class="bx bx-phone-call"></i>
+                    <h3>Call Us</h3>
+                    <p>+1 5589 55488 55<br />+1 6678 254445 41</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required=""
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required=""
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="7"
+                    placeholder="Message"
+                    required=""
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <style>
+        #footer {
+          background: #eeeeee;
+          padding: 0 0 30px 0;
+          color: #555555;
+          font-size: 14px;
+        }
+
+        #footer .footer-top {
+          background: #f6f6f6;
+          padding: 60px 0 30px 0;
+        }
+
+        #footer .footer-top .footer-info {
+          margin-bottom: 30px;
+        }
+
+        #footer .footer-top .footer-info h3 {
+          font-size: 24px;
+          margin: 0 0 20px 0;
+          padding: 2px 0 2px 0;
+          line-height: 1;
+          font-weight: 700;
+        }
+
+        #footer .footer-top .footer-info p {
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 0;
+          font-family: "Roboto", sans-serif;
+        }
+
+        #footer .footer-top .social-links a {
+          font-size: 18px;
+          display: inline-block;
+          background: #630ebd;
+          color: #fff;
+          line-height: 1;
+          padding: 8px 0;
+          margin-right: 4px;
+          border-radius: 4px;
+          text-align: center;
+          width: 36px;
+          height: 36px;
+          transition: 0.3s;
+        }
+
+        #footer .footer-top .social-links a:hover {
+          background: #d76dec;
+          text-decoration: none;
+        }
+
+        #footer .footer-top h4 {
+          font-size: 16px;
+          font-weight: 600;
+          position: relative;
+          padding-bottom: 12px;
+        }
+
+        #footer .footer-top .footer-links {
+          margin-bottom: 30px;
+        }
+
+        #footer .footer-top .footer-links ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        #footer .footer-top .footer-links ul i {
+          padding-right: 2px;
+          color: #630ebd;
+          font-size: 18px;
+          line-height: 1;
+        }
+
+        #footer .footer-top .footer-links ul li {
+          padding: 10px 0;
+          display: flex;
+          align-items: center;
+        }
+
+        #footer .footer-top .footer-links ul li:first-child {
+          padding-top: 0;
+        }
+
+        #footer .footer-top .footer-links ul a {
+          color: #555555;
+          transition: 0.3s;
+          display: inline-block;
+          line-height: 1;
+        }
+
+        #footer .footer-top .footer-links ul a:hover {
+          color: #630ebd;
+        }
+
+        #footer .footer-top .footer-newsletter form {
+          margin-top: 30px;
+          background: #fff;
+          padding: 6px 10px;
+          position: relative;
+          border: 1px solid #d5d5d5;
+          border-radius: 4px;
+        }
+
+        #footer .footer-top .footer-newsletter form input[type="email"] {
+          border: 0;
+          padding: 4px;
+          width: calc(100% - 110px);
+        }
+
+        #footer .footer-top .footer-newsletter form input[type="submit"] {
+          position: absolute;
+          top: -1px;
+          right: -1px;
+          bottom: -1px;
+          border: 0;
+          background: none;
+          font-size: 16px;
+          padding: 0 20px;
+          background: #630ebd;
+          color: #fff;
+          transition: 0.3s;
+          border-radius: 0 4px 4px 0;
+        }
+
+        #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+          background: #d76dec;
+        }
+
+        #footer .copyright {
+          text-align: center;
+          padding-top: 30px;
+        }
+
+        #footer .credits {
+          padding-top: 10px;
+          text-align: center;
+          font-size: 13px;
+        }
+      </style>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>Portfolio-X</h3>
+                <p>
+                  A108 Adam Street <br />
+                  NY 535022, USA<br /><br />
+                  <strong>Phone:</strong> +1 5589 55488 55<br />
+                  <strong>Email:</strong> info@example.com<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="bx bxl-facebook"></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                  <a href="#" class="google-plus"
+                    ><i class="bx bxl-skype"></i
+                  ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="bx bxl-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster
+                magna
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>NexKraft</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <style>
+      #preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #630ebd;
+  border-top-color: #ecf8f9;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #630ebd;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #d76dec;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+    </style>
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
